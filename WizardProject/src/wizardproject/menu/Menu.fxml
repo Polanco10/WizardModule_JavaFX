@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorid" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wizardproject.menu.Menu">
+   <children>
+      <VBox alignment="CENTER" prefHeight="534.0" prefWidth="300.0" style="-fx-background-color: #212121;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="250.0" prefWidth="300.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="173.0" prefHeight="45.0" prefWidth="200.0" text="Multimodal Observer" textFill="#ffb253">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/mo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Pane>
+            <JFXButton contentDisplay="RIGHT" graphicTextGap="20.0" onAction="#OpenWizard" prefHeight="50.0" prefWidth="300.0" text="Nuevo proyecto" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Regular" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton contentDisplay="RIGHT" graphicTextGap="20.0" onAction="#OpenProtocol" prefHeight="50.0" prefWidth="300.0" text="Modificar proyecto" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Regular" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton contentDisplay="RIGHT" graphicTextGap="20.0" onAction="#OpenObservations" prefHeight="50.0" prefWidth="300.0" text=" Iniciar protocolo existente" textFill="#fcfcfc">
+               <font>
+                  <Font name="Lucida Sans Regular" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

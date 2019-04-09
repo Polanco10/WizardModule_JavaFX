@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="WizardProject.jnlp">
+  <information>
+    <title>WizardProject</title>
+    <vendor>Polanco</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="WizardProject.jar" size="72906" download="eager" />
+    <jar href="lib\aopalliance-1.0.jar" size="4467" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\guava-16.0.1.jar" size="2228009" download="eager" />
+    <jar href="lib\guice-4.0.jar" size="668235" download="eager" />
+    <jar href="lib\javax.inject-1.jar" size="2497" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\slf4j-api-1.7.7.jar" size="29257" download="eager" />
+    <jar href="lib\slf4j-simple-1.7.25.jar" size="15257" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="WizardProject" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="wizardproject.WizardProject"  name="WizardProject" />
+  <update check="always"/>
+</jnlp>
